@@ -1,0 +1,239 @@
+<!doctype html>
+<!--
+  The privacy policy of Trieu AR Glasses, the page the Play Store links to.
+  Keep it current: every feature that reads, keeps or sends something new changes this page, and
+  PrivacyPolicyTest fails when the app starts talking to a host or asks for a permission this page
+  does not name. Publish it by copying this folder to a public site (see README "Privacy policy").
+  Before publishing, fill in the two [brackets] in "Who we are".
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trieu AR Glasses Privacy</title>
+<meta name="description" content="What Trieu AR Glasses reads, keeps and sends, and how to take it back.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d2127; --muted: #5b6370; --line: #e3e0d8; --accent: #1f6f5c; --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171b; --fg: #e8eaee; --muted: #a0a8b4; --line: #2b3038; --accent: #6fcfb2; --card: #1b1f24;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171b; --fg: #e8eaee; --muted: #a0a8b4; --line: #2b3038; --accent: #6fcfb2; --card: #1b1f24;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .short {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 8px; padding: 12px 20px; margin: 24px 0;
+  }
+  .short ul { margin: 8px 0; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-size: 0.85em; overflow-wrap: anywhere; }
+  .todo { background: #fff1b8; color: #3a2f00; padding: 0 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Trieu AR Glasses privacy policy</h1>
+<p class="meta">Last updated 8 November 2026, for version 0.33.0 of the Android app.</p>
+
+<p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
+you see and hear, helps you find your way, and shows things like the time and your steps on the
+glasses. This page says what the app reads, what it keeps, what it sends, and to whom.</p>
+
+<div class="short">
+<strong>In short</strong>
+<ul>
+  <li>There is no account and no sign-in. The app's maker runs no server and receives none of your data.</li>
+  <li>No ads, no analytics, no tracking, and nothing is sold.</li>
+  <li>Translating text and speech happens on your phone.</li>
+  <li>What the app keeps (pictures, clips, a diary, settings, your keys) stays on your phone, in the
+      app's own storage, and is left out of phone backups.</li>
+  <li>Some features send things to outside services: your position to map, weather and review services;
+      your question, and a picture if you asked about one, to the AI assistant you chose. Each is listed below.</li>
+  <li>Health data is read only, kept only in memory, and never sent anywhere.</li>
+</ul>
+</div>
+
+<h2>Who we are</h2>
+<p>The app is made by <span class="todo">[your name]</span>. For any question about this policy or
+your data, email <span class="todo">[your email address]</span>.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li><strong>Speech and text recognition and translation.</strong> Speech from the glasses' microphone
+      and text from the glasses' camera are recognised and translated on the phone, with models you
+      download once. The recordings and pictures used for this are not kept or sent.</li>
+  <li><strong>Pictures and video you take.</strong> "Yo, pic", "Yo, record" and security mode save
+      pictures, video and sound to the app's own storage, with a note of where you were and what was
+      being read or heard. Security mode records video and sound continuously until you turn it off,
+      so it can record other people: please follow the local rules on recording.</li>
+  <li><strong>The diary and the places log.</strong> A line with the time and place for each picture,
+      translation, place and plan of the day.</li>
+  <li><strong>Settings, the API keys you paste in, your home base and your travel-group code.</strong></li>
+  <li><strong>Downloaded maps and places</strong> for a city you chose to keep offline.</li>
+  <li><strong>Movie mode.</strong> The subtitles the camera reads off your TV, and the film's dialogue the
+      microphone hears, are read and translated on the phone, said aloud and forgotten. To notice the film
+      pausing it compares each camera picture, as a coarse grid of brightness, with the one before, on the
+      phone; the grid is forgotten too. Nothing is kept or sent.</li>
+</ul>
+<p>All of this is in the app's own storage. You can see, share, export or delete it under
+<strong>Saved items</strong> in the app. It is deleted when you uninstall the app, and it is left out of
+cloud backups and phone-to-phone transfers on purpose, because it includes your keys and positions.</p>
+
+<h2>Permissions the app asks for</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Location (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</td>
+      <td>To find places, directions and weather around you, to know which country you are in, and to
+      share your position with your travel group if you turn that on.</td></tr>
+  <tr><td>Nearby devices (<code>BLUETOOTH</code>, <code>BLUETOOTH_ADMIN</code>, <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code>)</td>
+      <td>To find and connect to your glasses.</td></tr>
+  <tr><td>Running in the background (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code>,
+      <code>FOREGROUND_SERVICE_LOCATION</code>, <code>WAKE_LOCK</code>)</td>
+      <td>To keep the glasses working, and your position up to date, with the phone locked in your pocket.
+      A notification shows while this is on.</td></tr>
+  <tr><td>Contacts (<code>READ_CONTACTS</code>)</td>
+      <td>Only when you say "send this to Anna": the name is looked up on the phone and your messaging app
+      opens on that person. Contacts are not kept or sent.</td></tr>
+  <tr><td>Notifications (<code>POST_NOTIFICATIONS</code>) and exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
+      <td>For the notification above, things that wait for you to unlock the phone, and the morning briefing
+      and market bells at the time you set.</td></tr>
+  <tr><td>Internet (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td>
+      <td>For the services listed below, and to know when you are offline.</td></tr>
+  <tr><td>Health Connect (<code>READ_STEPS</code>, <code>READ_HEART_RATE</code>, <code>READ_RESTING_HEART_RATE</code>,
+      <code>READ_ACTIVE_CALORIES_BURNED</code>, <code>READ_TOTAL_CALORIES_BURNED</code>, <code>READ_HEALTH_DATA_IN_BACKGROUND</code>)</td>
+      <td>Only if you turn on health data. See <a href="#health">Health data</a>.</td></tr>
+  <tr><td>Permission usage (<code>START_VIEW_PERMISSION_USAGE</code>)</td>
+      <td>Lets Android open this app's explanation of how it uses health data.</td></tr>
+  <tr><td>Screen capture service (<code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>)</td>
+      <td>Added by Everysight's glasses library, not used by this app. The app never captures your screen,
+      and Android would ask you first if anything tried.</td></tr>
+</table>
+</div>
+
+<h2 id="health">Health data</h2>
+<p>Health data is off until you turn on <strong>Use health data</strong> in the app's Health tab, and then
+Android's Health Connect asks you which kinds the app may read.</p>
+<ul>
+  <li><strong>What is read:</strong> today's steps, your latest heart rate and today's resting heart rate,
+      and the calories burned today. Only the kinds you allow.</li>
+  <li><strong>What it is used for:</strong> showing these numbers on the phone's Health tab and, if you
+      leave the health card on, on the glasses' display. Nothing else.</li>
+  <li><strong>Kept:</strong> no. Each reading stays in the phone's memory until the next one and is gone
+      when the app closes. Nothing is written to Health Connect.</li>
+  <li><strong>Sent:</strong> never. Not to the AI assistants, not to the app's maker, not to anyone.
+      Health data is not used for advertising, profiling or any purpose other than showing it to you.</li>
+  <li><strong>Reading in the background</strong>, if you allow it, only lets the card keep up while the
+      phone is locked.</li>
+  <li>Take it back at any time in Health Connect, or by turning <strong>Use health data</strong> off.</li>
+</ul>
+<p>The app's use of information received from Health Connect follows the
+<a href="https://support.google.com/googleplay/android-developer/answer/12991134">Google Play's health permissions policy</a>,
+including its Limited Use requirements.</p>
+
+<h2>What is sent, and to whom</h2>
+<p>Every service below is contacted directly from your phone. Like any website, each one sees your
+phone's internet address when it is contacted. Each has its own privacy policy.</p>
+
+<h3>Your position</h3>
+<ul>
+  <li><strong>Wikipedia</strong> (<code>*.wikipedia.org</code>: the Wikipedia in your phone's language, and
+      <code>en.wikipedia.org</code>) and the <strong>OpenStreetMap search servers</strong>
+      (<code>overpass-api.de</code>, <code>overpass.openstreetmap.fr</code>, <code>overpass.kumi.systems</code>):
+      where you are, to find what is around you.</li>
+  <li><strong>Nominatim</strong> (<code>nominatim.openstreetmap.org</code>): your position rounded to about a
+      kilometre, to know which country you are in.</li>
+  <li><strong>Valhalla</strong> (<code>valhalla1.openstreetmap.de</code>): where you are and where you are walking to,
+      for directions.</li>
+  <li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>): your position rounded to about a kilometre,
+      for the weather.</li>
+  <li><strong>US National Weather Service</strong> (<code>api.weather.gov</code>): where you are, for weather
+      warnings, only in the United States.</li>
+  <li><strong>Yelp</strong> (<code>api.yelp.com</code>) and <strong>Tripadvisor</strong> (<code>terra.tripadvisor.com</code>):
+      where you are, for ratings of places nearby, only if you add a key for them.</li>
+  <li><strong>Your travel group</strong>, only if you turn on <strong>Share my position</strong>: your name, position
+      and day plan go every two minutes through a relay (<code>ntfy.sh</code>, or one you set up). They are
+      encrypted with a key made from your group's code, so the relay cannot read them.</li>
+</ul>
+
+<h3>Your questions to an AI assistant</h3>
+<p>Questions the app cannot answer by itself go to the assistant you chose, using the key you pasted in:
+<strong>Anthropic Claude</strong> (<code>api.anthropic.com</code>), <strong>Google Gemini</strong>
+(<code>generativelanguage.googleapis.com</code>) or <strong>OpenAI ChatGPT</strong> (<code>api.openai.com</code>).
+The assistant gets the text of your question. For "what am I looking at" it also gets a picture from the
+glasses' camera, and for questions about what is near you, your position. If you turn on
+<strong>Identify what I look at by itself</strong> (off unless you turn it on), a picture goes to the assistant each
+time your eyes rest on something for two seconds. The assistant may search the web
+to answer. Nothing is sent to an assistant until you add its key. Your requests are covered by the policy
+of the company whose key you use.</p>
+
+<h3>Things that do not include your position</h3>
+<ul>
+  <li><strong>News</strong>: the headlines you chose are read from <code>feeds.bbci.co.uk</code>,
+      <code>news.google.com</code>, <code>feeds.npr.org</code>, <code>www.theguardian.com</code>,
+      <code>www.aljazeera.com</code>, <code>rss.dw.com</code> and any feed you add yourself.</li>
+  <li><strong>Weather warnings</strong>: <code>feeds.meteoalarm.org</code>, <code>data.weather.gov.hk</code> and
+      <code>www.gdacs.org</code>. The phone reads their whole feeds and picks out what concerns you.</li>
+  <li><strong>Stocks</strong>: the symbols you follow, to <strong>Finnhub</strong> (<code>finnhub.io</code>), only if you add a key.</li>
+  <li><strong>Currency</strong>: the two currencies you are converting between, to <strong>Frankfurter</strong>
+      (<code>api.frankfurter.dev</code>).</li>
+  <li><strong>Downloads</strong>: speech models from <code>alphacephei.com</code>, and translation and text-recognition
+      models from Google through ML Kit. Google's ML Kit runs on the phone; Google says it may collect
+      anonymous diagnostic and usage information about the library itself, not the text or pictures it reads.</li>
+</ul>
+
+<h3>Pages and apps the app opens for you</h3>
+<p>Some buttons open another app or a web page on your phone, which then works under its own policy:
+a map on <code>www.openstreetmap.org</code>; Yelp and Tripadvisor pages (<code>www.yelp.com</code>,
+<code>www.tripadvisor.com</code>) to read or write a review, with your review text on the clipboard for you to paste;
+a ride in Uber (<code>m.uber.com</code>) or Lyft (<code>lyft.com</code>); Health Connect on the Play Store
+(<code>play.google.com</code>); and your messaging app, with the picture attached, for you to send yourself.
+The app never posts, sends or books anything without you tapping it in that app.</p>
+
+<h3>The glasses</h3>
+<p>The app talks to the glasses over Bluetooth, using Everysight's software library. Everysight's own apps
+and services, if you use them, are covered by
+<a href="https://www.everysight.com/policies/privacy-policy">Everysight's privacy policy</a>.</p>
+
+<h2>Children</h2>
+<p>The app is not meant for children under 13 and does not knowingly collect anything from them.</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Turn off location, contacts, health data or any other permission in Android's settings or in Health
+      Connect; the features that need it stop, and the rest keep working.</li>
+  <li>Leave out a key, and the service it is for is never contacted.</li>
+  <li>Delete pictures, clips and the diary under <strong>Saved items</strong>, or everything by uninstalling the app.</li>
+  <li>Because the maker holds none of your data, there is nothing to ask us to delete. For data a service
+      above received, ask that service.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>This page changes whenever a new version of the app reads, keeps or sends something new. The date at the
+top says when it last changed.</p>
+
+</main>
+</body>
+</html>

@@ -54,7 +54,7 @@
 <main>
 
 <h1>Trieu AR Glasses privacy policy</h1>
-<p class="meta">Last updated 8 November 2026, for version 0.33.0 of the Android app.</p>
+<p class="meta">Last updated 11 November 2026, for version 0.34.0 of the Android app.</p>
 
 <p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
 you see and hear, helps you find your way, and shows things like the time and your steps on the
@@ -67,7 +67,8 @@ glasses. This page says what the app reads, what it keeps, what it sends, and to
   <li>No ads, no analytics, no tracking, and nothing is sold.</li>
   <li>Translating text and speech happens on your phone.</li>
   <li>What the app keeps (pictures, clips, a diary, settings, your keys) stays on your phone, in the
-      app's own storage, and is left out of phone backups.</li>
+      app's own storage, and is left out of phone backups. Photos you take with the phone's own camera go
+      to the phone's gallery instead, like any other photo.</li>
   <li>Some features send things to outside services: your position to map, weather and review services;
       your question, and a picture if you asked about one, to the AI assistant you chose. Each is listed below.</li>
   <li>Health data is read only, kept only in memory, and never sent anywhere.</li>
@@ -95,8 +96,13 @@ your data, email <a href="mailto:jtplanet@gmail.com">jtplanet@gmail.com</a>.</p>
       microphone hears, are read and translated on the phone, said aloud and forgotten. To notice the film
       pausing it compares each camera picture, as a coarse grid of brightness, with the one before, on the
       phone; the grid is forgotten too. Nothing is kept or sent.</li>
+  <li><strong>Phone camera.</strong> When you open Phone camera, the phone's own camera shows its view on
+      the phone and, if you leave that switched on, as small pictures on your glasses over Bluetooth. A photo
+      you take ("Yo, take photo", or the Shoot button) is saved in the phone's gallery, in
+      Pictures/TrieuARGlasses, where other apps you allow can see it like any other photo. The view itself is
+      not kept, and nothing is sent anywhere.</li>
 </ul>
-<p>All of this is in the app's own storage. You can see, share, export or delete it under
+<p>All of this, apart from the phone camera's photos in the gallery, is in the app's own storage. You can see, share, export or delete it under
 <strong>Saved items</strong> in the app. It is deleted when you uninstall the app, and it is left out of
 cloud backups and phone-to-phone transfers on purpose, because it includes your keys and positions.</p>
 
@@ -116,6 +122,9 @@ cloud backups and phone-to-phone transfers on purpose, because it includes your 
   <tr><td>Contacts (<code>READ_CONTACTS</code>)</td>
       <td>Only when you say "send this to Anna": the name is looked up on the phone and your messaging app
       opens on that person. Contacts are not kept or sent.</td></tr>
+  <tr><td>Camera (<code>CAMERA</code>)</td>
+      <td>Only when you open Phone camera, to use the phone as a remote camera: its view shows on the phone
+      and the glasses, and the photos you take go to the phone's gallery. Nothing from it is sent.</td></tr>
   <tr><td>Notifications (<code>POST_NOTIFICATIONS</code>) and exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
       <td>For the notification above, things that wait for you to unlock the phone, and the morning briefing
       and market bells at the time you set.</td></tr>

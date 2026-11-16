@@ -54,7 +54,7 @@
 <main>
 
 <h1>Trieu AR Glasses privacy policy</h1>
-<p class="meta">Last updated 11 November 2026, for version 0.34.0 of the Android app.</p>
+<p class="meta">Last updated 16 November 2026, for version 0.34.2 of the Android app.</p>
 
 <p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
 you see and hear, helps you find your way, and shows things like the time and your steps on the
@@ -182,7 +182,7 @@ phone's internet address when it is contacted. Each has its own privacy policy.<
   <li><strong>Yelp</strong> (<code>api.yelp.com</code>) and <strong>Tripadvisor</strong> (<code>terra.tripadvisor.com</code>):
       where you are, for ratings of places nearby, only if you add a key for them.</li>
   <li><strong>Your travel group</strong>, only if you turn on <strong>Share my position</strong>: your name, position
-      and day plan go every two minutes through a relay (<code>ntfy.sh</code>, or one you set up). They are
+      (with the time it was taken; one older than ten minutes is not sent) and day plan go every two minutes through a relay (<code>ntfy.sh</code>, or one you set up). They are
       encrypted with a key made from your group's code, so the relay cannot read them.</li>
 </ul>
 
@@ -196,6 +196,11 @@ glasses' camera, and for questions about what is near you, your position. If you
 time your eyes rest on something for two seconds. The assistant may search the web
 to answer. Nothing is sent to an assistant until you add its key. Your requests are covered by the policy
 of the company whose key you use.</p>
+<p>A sentence is a question only when it starts with your wake word. With the English speech model on the phone,
+only what that model hears can be one. Without it, the model of the language being translated listens for the
+wake word too: if the wake word is also a word of that language (the default "yo" is Spanish for "I"), a sentence
+someone near you says that starts with it can be taken as a question and sent. Settings says so under the wake
+word, and how to avoid it.</p>
 
 <h3>Things that do not include your position</h3>
 <ul>

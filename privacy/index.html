@@ -54,7 +54,7 @@
 <main>
 
 <h1>Trieu AR Glasses privacy policy</h1>
-<p class="meta">Last updated 16 November 2026, for version 0.34.2 of the Android app.</p>
+<p class="meta">Last updated 16 November 2026, for version 0.35.0 of the Android app.</p>
 
 <p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
 you see and hear, helps you find your way, and shows things like the time and your steps on the
@@ -92,6 +92,10 @@ your data, email <a href="mailto:jtplanet@gmail.com">jtplanet@gmail.com</a>.</p>
       translation, place and plan of the day.</li>
   <li><strong>Settings, the API keys you paste in, your home base and your travel-group code.</strong></li>
   <li><strong>Downloaded maps and places</strong> for a city you chose to keep offline.</li>
+  <li><strong>Timers.</strong> A timer you set ("Yo, noodles three minutes") is kept in the phone's memory with
+      the way your head pointed when you set it, read from the glasses' motion sensors, so its card shows
+      only when you look there again. A line in the diary says when it rang. The direction is not kept on
+      disk and nothing about timers is sent; they are gone when the app closes.</li>
   <li><strong>Movie mode.</strong> The subtitles the camera reads off your TV, and the film's dialogue the
       microphone hears, are read and translated on the phone, said aloud and forgotten. To notice the film
       pausing it compares each camera picture, as a coarse grid of brightness, with the one before, on the
@@ -126,8 +130,8 @@ cloud backups and phone-to-phone transfers on purpose, because it includes your 
       <td>Only when you open Phone camera, to use the phone as a remote camera: its view shows on the phone
       and the glasses, and the photos you take go to the phone's gallery. Nothing from it is sent.</td></tr>
   <tr><td>Notifications (<code>POST_NOTIFICATIONS</code>) and exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
-      <td>For the notification above, things that wait for you to unlock the phone, and the morning briefing
-      and market bells at the time you set.</td></tr>
+      <td>For the notification above, things that wait for you to unlock the phone, the morning briefing
+      and market bells at the time you set, and the phone's ring when a timer is done.</td></tr>
   <tr><td>Internet (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td>
       <td>For the services listed below, and to know when you are offline.</td></tr>
   <tr><td>Health Connect (<code>READ_STEPS</code>, <code>READ_HEART_RATE</code>, <code>READ_RESTING_HEART_RATE</code>,

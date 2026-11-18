@@ -54,7 +54,7 @@
 <main>
 
 <h1>Trieu AR Glasses privacy policy</h1>
-<p class="meta">Last updated 16 November 2026, for version 0.35.0 of the Android app.</p>
+<p class="meta">Last updated 18 November 2026, for version 0.36.0 of the Android app.</p>
 
 <p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
 you see and hear, helps you find your way, and shows things like the time and your steps on the
@@ -96,6 +96,21 @@ your data, email <a href="mailto:jtplanet@gmail.com">jtplanet@gmail.com</a>.</p>
       the way your head pointed when you set it, read from the glasses' motion sensors, so its card shows
       only when you look there again. A line in the diary says when it rang. The direction is not kept on
       disk and nothing about timers is sent; they are gone when the app closes.</li>
+  <li><strong>Where you parked.</strong> "Yo, I parked here" keeps your position at that moment, the time and
+      any note you said with it ("level three") in the favorites file in the app's own storage, so "Yo, take me
+      to the car" can walk you back. It is not sent anywhere. Walking back uses the route server listed below,
+      like any other walk.</li>
+  <li><strong>Your allergy list.</strong> What you type under Settings &gt; Food and customs is kept with the
+      settings. It is compared with translated menu lines on the phone, and a line in the diary says when it
+      warned you. It is sent only to the AI assistant you chose, and only with a question you ask about a menu
+      or a dish, so the answer can flag them. This can say something about your health: leave the field empty
+      if you do not want it kept or sent.</li>
+  <li><strong>The tipping card.</strong> The tips and manners are built into the app. To pick the card it uses the
+      country you are in, which the app already works out from your position (see Nominatim below), and it
+      remembers the last country it showed the card for.</li>
+  <li><strong>The teleprompter's script.</strong> The script you type or paste is kept with the settings and
+      shown on the glasses. It is not sent anywhere. While the teleprompter is up, what the microphone hears
+      is listened to for commands only.</li>
   <li><strong>Movie mode.</strong> The subtitles the camera reads off your TV, and the film's dialogue the
       microphone hears, are read and translated on the phone, said aloud and forgotten. To notice the film
       pausing it compares each camera picture, as a coarse grid of brightness, with the one before, on the
@@ -195,7 +210,9 @@ phone's internet address when it is contacted. Each has its own privacy policy.<
 <strong>Anthropic Claude</strong> (<code>api.anthropic.com</code>), <strong>Google Gemini</strong>
 (<code>generativelanguage.googleapis.com</code>) or <strong>OpenAI ChatGPT</strong> (<code>api.openai.com</code>).
 The assistant gets the text of your question. For "what am I looking at" it also gets a picture from the
-glasses' camera, and for questions about what is near you, your position. If you turn on
+glasses' camera, and for questions about what is near you, your position. A question about a menu or a dish
+also carries your allergy list, when you have typed one. "How much do I tip" is answered from the app itself;
+only in a country the app has no card for does it go to the assistant, with your position. If you turn on
 <strong>Identify what I look at by itself</strong> (off unless you turn it on), a picture goes to the assistant each
 time your eyes rest on something for two seconds. The assistant may search the web
 to answer. Nothing is sent to an assistant until you add its key. Your requests are covered by the policy

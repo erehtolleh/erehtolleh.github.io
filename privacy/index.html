@@ -54,7 +54,7 @@
 <main>
 
 <h1>Trieu AR Glasses privacy policy</h1>
-<p class="meta">Last updated 18 November 2026, for version 0.36.0 of the Android app.</p>
+<p class="meta">Last updated 18 November 2026, for version 0.36.1 of the Android app.</p>
 
 <p>Trieu AR Glasses is a phone app that works with Everysight Maverick glasses. It translates what
 you see and hear, helps you find your way, and shows things like the time and your steps on the
@@ -101,10 +101,11 @@ your data, email <a href="mailto:jtplanet@gmail.com">jtplanet@gmail.com</a>.</p>
       to the car" can walk you back. It is not sent anywhere. Walking back uses the route server listed below,
       like any other walk.</li>
   <li><strong>Your allergy list.</strong> What you type under Settings &gt; Food and customs is kept with the
-      settings. It is compared with translated menu lines on the phone, and a line in the diary says when it
-      warned you. It is sent only to the AI assistant you chose, and only with a question you ask about a menu
-      or a dish, so the answer can flag them. This can say something about your health: leave the field empty
-      if you do not want it kept or sent.</li>
+      settings. It is compared with translated menu lines on the phone. The diary notes only that a warning was
+      shown, not what for. The list is sent only to the AI assistant you chose, and only with a question you ask
+      about a menu or a dish, so the answer can flag them; the switch under the list, <strong>Tell the AI assistant
+      about them</strong>, turns that off, and then the list never leaves the phone. It can say something about
+      your health: leave the field empty if you do not want it kept.</li>
   <li><strong>The tipping card.</strong> The tips and manners are built into the app. To pick the card it uses the
       country you are in, which the app already works out from your position (see Nominatim below), and it
       remembers the last country it showed the card for.</li>
@@ -211,7 +212,7 @@ phone's internet address when it is contacted. Each has its own privacy policy.<
 (<code>generativelanguage.googleapis.com</code>) or <strong>OpenAI ChatGPT</strong> (<code>api.openai.com</code>).
 The assistant gets the text of your question. For "what am I looking at" it also gets a picture from the
 glasses' camera, and for questions about what is near you, your position. A question about a menu or a dish
-also carries your allergy list, when you have typed one. "How much do I tip" is answered from the app itself;
+also carries your allergy list, when you have typed one and left its switch on. "How much do I tip" is answered from the app itself;
 only in a country the app has no card for does it go to the assistant, with your position. If you turn on
 <strong>Identify what I look at by itself</strong> (off unless you turn it on), a picture goes to the assistant each
 time your eyes rest on something for two seconds. The assistant may search the web
